@@ -1,0 +1,173 @@
+body {
+    background: #dde1e7;
+}
+
+.wrapper {
+    margin: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px auto 90px;
+    gap: 10px;
+    min-height: 100vh;
+    align-content: stretch;
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+
+    /* justify-content: space-evenly;
+    align-content: space-evenly; */
+    /* align-items: stretch; */
+    padding: 10px;
+
+    box-shadow: inset -3px -3px 7px #ffffff73,
+        inset 3px 3px 5px rgba(94, 104, 121, .228);
+}
+
+.header {
+    grid-area: header;
+    height: 40px;
+    background: #dde1e7;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73,
+        3px 3px 5px rgba(94, 104, 121, .228);
+    box-shadow: inset -3px -3px 7px #ffffff73,
+        inset 3px 3px 5px rgba(94, 104, 121, .228);
+}
+
+.header_logo {}
+
+
+
+.main {
+    grid-area: main;
+    background: #dde1e7;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .228);
+    display: grid;
+    grid-template-areas: "lsb content rsb";
+    grid-template-columns: minmax(40px, 120px) 1fr minmax(40px, 120px);
+}
+
+.left_side_bar {
+    grid-area: lsb;
+    margin: 5px;
+    background: #dde1e7;
+    border-radius: 5px;
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .228);
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    gap: 5px;
+}
+
+.lsb_first_block {
+    align-items: center;
+    justify-items: center;
+    background: #dde1e7;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .228);
+    display: grid;
+    margin: 5px;
+}
+
+.lsb_nav {
+    background: #dde1e7;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .228);
+    display: grid;
+    align-content: start;
+    gap: 5px;
+    margin: 5px;
+}
+
+.lsb_nav_button {
+    align-items: center;
+    justify-items: center;
+    background: #dde1e7;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .228);
+    display: grid;
+    margin: 5px;
+}
+
+.lsb_nav_button:hover {
+    align-items: center;
+    justify-items: center;
+    background: #dde1e7;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .628);
+    display: grid;
+    margin: 5px;
+}
+
+.lsb_nav_button:active {
+    align-items: center;
+    justify-items: center;
+    background: #dde1e7;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .228);
+    display: grid;
+    margin: 5px;
+}
+
+.center_content {
+    grid-area: content;
+    margin: 5px;
+    background: #dde1e7;
+    border-radius: 5px;
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .228);
+    display: grid;
+    gap: 10px;
+}
+
+.right_side_bar {
+    background: #dde1e7;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .228);
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    gap: 5px;
+}
+
+.rsb_first_block {
+    align-items: center;
+    justify-items: center;
+    background: #dde1e7;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .228);
+    display: grid;
+    margin: 5px;
+}
+
+.rsb_nav {
+    background: #dde1e7;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .228);
+    display: grid;
+    align-content: start;
+    gap: 5px;
+    margin: 5px;
+}
+
+.rsb_nav_button {
+    align-items: center;
+    justify-items: center;
+    background: #dde1e7;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .228);
+    display: grid;
+    margin: 5px;
+}
+
+.footer {
+    grid-area: footer;
+
+    background: #dde1e7;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .228)
+}
